@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.UserProcedureController">
+    <children>
+        <AnchorPane layoutY="77.0" prefHeight="330.0" prefWidth="702.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <TableView fx:id="tableview" editable="true" layoutX="112.0" layoutY="4.0" prefHeight="265.0" prefWidth="478.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                    <columns>
+                        <TableColumn fx:id="procedureId" prefWidth="49.60003852844238" text="№" />
+                        <TableColumn fx:id="procedureName" prefWidth="291.0" text="Процедура" />
+                        <TableColumn fx:id="procedureCost" minWidth="0.0" prefWidth="136.0" text="Стоимость" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TableView>
+                <Button fx:id="goBackButton" cancelButton="true" layoutX="577.0" layoutY="277.0" mnemonicParsing="false" onAction="#goBack" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #03738C;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font></Button>
+                <Button fx:id="record" layoutX="302.0" layoutY="277.0" mnemonicParsing="false" onAction="#addRecord" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #D98F07;" text="Записаться" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="23.0" layoutY="26.0" text="Доступные процедуры" textFill="WHITE">
+            <font>
+                <Font name="Geotype TT" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.AdminProceduresController">
+    <children>
+        <AnchorPane layoutY="77.0" prefHeight="330.0" prefWidth="702.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <TableView fx:id="tableview" editable="true" layoutX="112.0" layoutY="6.0" prefHeight="248.0" prefWidth="479.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                    <columns>
+                        <TableColumn fx:id="procedursId" prefWidth="49.60003852844238" text="№" />
+                        <TableColumn fx:id="procedursName" prefWidth="280.0" text="Процедура" />
+                        <TableColumn fx:id="procedursCost" minWidth="0.0" prefWidth="147.0" text="Стоимость" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TableView>
+                <Button fx:id="addProcedursAdmin" layoutX="188.0" layoutY="260.0" mnemonicParsing="false" onAction="#addProcedure" prefHeight="56.0" prefWidth="140.0" style="-fx-background-color: #D98F07;" text="Добавить" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="22.0" />
+                    </font>
+                </Button>
+                <Button fx:id="delProcedursAdmin" layoutX="376.0" layoutY="260.0" mnemonicParsing="false" onAction="#delProcedure" prefHeight="56.0" prefWidth="140.0" style="-fx-background-color: #D98F07;" text="Удалить" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="22.0" />
+                    </font>
+                </Button>
+                <Button fx:id="goBackButton" layoutX="591.0" layoutY="272.0" mnemonicParsing="false" onAction="#goBack" prefHeight="33.0" prefWidth="86.0" style="-fx-background-color: #03738C;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="14.0" layoutY="20.0" text="Процедуры" textFill="WHITE">
+            <font>
+                <Font name="Geotype TT" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

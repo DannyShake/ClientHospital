@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.Controller">
+    <children>
+        <AnchorPane layoutY="85.0" prefHeight="314.0" prefWidth="700.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <Button fx:id="buttonSignUp" layoutX="294.0" layoutY="228.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="231.0" style="-fx-border-radius: 10; -fx-background-color: #D98F07;" text="Зарегистрироваться" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="22.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="loginField" layoutX="176.0" layoutY="71.0" prefHeight="38.0" prefWidth="349.0" promptText="Логин" style="-fx-background-color: #F2F2F2;">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordField" layoutX="176.0" layoutY="138.0" prefHeight="38.0" prefWidth="349.0" promptText="Пароль" style="-fx-background-color: #F2F2F2;">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="buttonSignIn" defaultButton="true" layoutX="176.0" layoutY="228.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="96.0" style="-fx-border-radius: 10; -fx-background-color: #D98F07;" text="Войти" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="22.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="24.0" layoutY="26.0" text="Авторизация" textFill="WHITE">
+            <font>
+                <Font name="Geotype TT" size="46.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

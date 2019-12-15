@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.AdminDoctorsController">
+    <children>
+        <AnchorPane layoutY="70.0" prefHeight="330.0" prefWidth="702.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <TableView fx:id="tableview" editable="true" layoutX="118.0" layoutY="4.0" prefHeight="253.0" prefWidth="466.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                    <columns>
+                        <TableColumn fx:id="doctorsId" prefWidth="49.60003852844238" text="№" />
+                        <TableColumn fx:id="doctorsName" prefWidth="254.0" text="Доктор" />
+                        <TableColumn fx:id="doctorsGender" minWidth="0.0" prefWidth="173.0" text="Специализация" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TableView>
+                <Button fx:id="delDoctorsAdmin" layoutX="361.0" layoutY="273.0" mnemonicParsing="false" onAction="#delDoctor" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #D98F07;" text="Удалить" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addDoctorsAdmin" defaultButton="true" layoutX="201.0" layoutY="273.0" mnemonicParsing="false" onAction="#addDoctorAdmin" prefHeight="34.0" prefWidth="140.0" style="-fx-background-color: #D98F07;" text="Добавить" textFill="#f8f8f8">
+                    <font>
+                        <Font name="Impact" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="goBackButton" cancelButton="true" layoutX="584.0" layoutY="273.0" mnemonicParsing="false" onAction="#goBack" prefHeight="33.0" prefWidth="86.0" style="-fx-background-color: #03738C;" text="Назад" textFill="#f8f8f8">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="22.0" layoutY="23.0" text="Доктора" textFill="WHITE">
+            <font>
+                <Font name="Geotype TT" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="702.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.UserSiteController">
+    <children>
+        <AnchorPane layoutY="77.0" prefHeight="330.0" prefWidth="702.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <Button fx:id="patientsButton" layoutX="190.0" layoutY="67.0" mnemonicParsing="false" onAction="#showProcedurs" prefHeight="45.0" prefWidth="318.0" style="-fx-background-color: #D98F07;" text="Список процедур" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="154.0" layoutY="14.0" prefHeight="53.0" prefWidth="390.0" text="Выберите необходимую категорию" textFill="WHITE">
+                    <font>
+                        <Font name="Geotype TT" size="24.0" />
+                    </font>
+                </Label>
+                <Button fx:id="back" cancelButton="true" layoutX="27.0" layoutY="272.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #03738C;" text="Выйти" textFill="#f2f2f2">
+               <font>
+                  <Font name="Impact" size="15.0" />
+               </font></Button>
+                <Button fx:id="diagramButton" layoutX="190.0" layoutY="182.0" mnemonicParsing="false" onAction="#showDiagram" prefHeight="45.0" prefWidth="318.0" style="-fx-background-color: #D98F07;" text="Диаграмма заболеваний" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="showRecords" layoutX="190.0" layoutY="121.0" mnemonicParsing="false" onAction="#showRecords" prefHeight="45.0" prefWidth="318.0" style="-fx-background-color: #D98F07;" text="Просмотреть расписание" textFill="WHITE">
+                    <font>
+                        <Font name="Impact" size="18.0" />
+                    </font>
+                </Button>
+            <Button fx:id="buttonGraph" layoutX="190.0" layoutY="237.0" mnemonicParsing="false" onAction="#showRecords" prefHeight="45.0" prefWidth="318.0" style="-fx-background-color: #D98F07;" text="График загруженности поликлиники" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="21.0" layoutY="21.0" text="Меню пациента" textFill="#f2f2f2">
+            <font>
+                <Font name="Geotype TT" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

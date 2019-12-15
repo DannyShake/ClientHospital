@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="703.0" style="-fx-background-color: #025373;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.controllers.AdminPatientsController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="77.0" prefHeight="330.0" prefWidth="694.0" style="-fx-background-color: #03A6A6;">
+            <children>
+                <TabPane prefHeight="330.0" prefWidth="703.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Пациенты">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="452.0">
+                                    <children>
+                                        <TableView fx:id="tableview" editable="true" layoutX="1.0" layoutY="-2.0" prefHeight="293.0" prefWidth="471.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                                            <columns>
+                                                <TableColumn fx:id="patientsId" prefWidth="49.60003852844238" text="№" />
+                                                <TableColumn fx:id="patientsName" prefWidth="238.0" text="Пациент" />
+                                                <TableColumn fx:id="patientsAge" minWidth="0.0" prefWidth="70.0" text="Возраст" />
+                                                <TableColumn fx:id="patientsGender" minWidth="0.0" prefWidth="124.0" text="Пол" />
+                                            </columns>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </TableView>
+                                        <Button fx:id="safePatients" defaultButton="true" layoutX="535.0" layoutY="193.0" mnemonicParsing="false" onAction="#savePatients" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #D98F07;" text="Отчёт" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="20.0" />
+                                 </font>
+                              </Button>
+                                        <Button fx:id="goBackButton1" cancelButton="true" layoutX="536.0" layoutY="243.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #03738C;" text="Назад" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="15.0" />
+                                 </font>
+                              </Button>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Доступные процедуры ">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tableview3" editable="true" layoutY="-3.0" prefHeight="293.0" prefWidth="471.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                                            <columns>
+                                                <TableColumn fx:id="procedursId" prefWidth="49.60003852844238" text="№" />
+                                                <TableColumn fx:id="procedursName" prefWidth="281.0" text="Процедура" />
+                                                <TableColumn fx:id="procedursCost" minWidth="0.0" prefWidth="146.0" text="стоимость" />
+                                            </columns>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </TableView>
+                                        <Button fx:id="safeProcedures" defaultButton="true" layoutX="535.0" layoutY="193.0" mnemonicParsing="false" onAction="#saveProcedures" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #D98F07;" text="Отчёт" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="20.0" />
+                                 </font></Button>
+                                        <Button fx:id="goBackButton" cancelButton="true" layoutX="536.0" layoutY="243.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #03738C;" text="Назад" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="15.0" />
+                                 </font></Button>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Доктора">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <TableView fx:id="tableview2" editable="true" layoutY="-3.0" prefHeight="291.0" prefWidth="471.0" style="-fx-background-color: #fafafafa; -fx-border-radius: 5;">
+                                            <columns>
+                                                <TableColumn fx:id="doctorsId" prefWidth="49.60003852844238" text="№" />
+                                                <TableColumn fx:id="doctorsName" prefWidth="254.0" text="Доктор" />
+                                                <TableColumn fx:id="doctorsGender" minWidth="0.0" prefWidth="173.0" text="Специализация" />
+                                            </columns>
+                                            <opaqueInsets>
+                                                <Insets />
+                                            </opaqueInsets>
+                                        </TableView>
+                                        <Button fx:id="safeDoctors" defaultButton="true" layoutX="535.0" layoutY="193.0" mnemonicParsing="false" onAction="#saveDoctors" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #D98F07;" text="Отчёт" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="20.0" />
+                                 </font></Button>
+                                        <Button fx:id="goBackButton2" cancelButton="true" layoutX="536.0" layoutY="243.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: #03738C;" text="Назад" textFill="WHITE">
+                                 <font>
+                                    <Font name="Impact" size="15.0" />
+                                 </font></Button>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </AnchorPane>
+        <Label layoutX="14.0" layoutY="23.0" text="Списки" textFill="WHITE">
+            <font>
+                <Font name="Geotype TT" size="35.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
